@@ -1,0 +1,107 @@
+baseURL = "https://blamer.ch"
+defaultContentLanguage = "en"
+theme = "nomad-tech"
+
+[pagination]
+  pagerSize = 6
+
+# -------------------------------------------------------------------
+# ENGLISCH (Main Language - Meistens ohne /en/ in der URL)
+# -------------------------------------------------------------------
+[languages.en]
+  languageCode = "en-US"
+  contentDir = "content/en"
+  title = "Blamer.ch | Offensive Security Specialist"
+  weight = 1
+
+  [languages.en.params]
+    subtitle = "Cybersecurity • Ethical Hacking • Arch Linux"
+    description = "Identifying critical vulnerabilities before they are exploited."
+
+    [[languages.en.params.portfolio]]
+      title = "TryHackMe Elite"
+      type = "Security Labs"
+      icon = "🛡️"
+      description = "Completed 120+ labs covering Web Exploitation, Privilege Escalation, and AD Hacking."
+      tags = ["Pentesting", "CTF", "Security"]
+      # Hier das /en/ entfernt, da Main Language
+      project_url = "/portfolio/thm-milestone/"
+
+  [[languages.en.menu.main]]
+    name = "About"
+    url = "/about/"
+    weight = 1
+  [[languages.en.menu.main]]
+    name = "Blog"
+    url = "/posts/"
+    weight = 2
+
+# -------------------------------------------------------------------
+# DEUTSCH (Second Language - Immer mit /de/)
+# -------------------------------------------------------------------
+[languages.de]
+  languageCode = "de-CH"
+  contentDir = "content/de"
+  title = "Blamer.ch | IT-Sicherheit Spezialist"
+  weight = 2
+
+  [languages.de.params]
+    subtitle = "IT-Sicherheit • Ethisches Hacking • Arch Linux"
+    description = "Identifizierung kritischer Schwachstellen, bevor sie ausgenutzt werden."
+
+    [[languages.de.params.portfolio]]
+      title = "TryHackMe: Über 120 Security Labs"
+      type = "Offensive Security"
+      icon = "🛡️"
+      description = "Erfolgreicher Abschluss von über 120 spezialisierten Labs."
+      tags = ["Pentesting", "CTF", "Security"]
+      project_url = "/de/portfolio/thm-milestone/"
+
+  [[languages.de.menu.main]]
+    name = "Über mich"
+    url = "/de/about/"
+    weight = 1
+  [[languages.de.menu.main]]
+    name = "Blog"
+    url = "/de/posts/"
+    weight = 2
+
+# -------------------------------------------------------------------
+# GLOBALE PARAMETER
+# -------------------------------------------------------------------
+[params]
+  author = "Silas Unternährer"
+  logo = "BLAMER.CH"
+
+  [[params.social]]
+    name = "YouTube"
+    icon = "📺"
+    url = "https://www.youtube.com/@The_BLAME"
+    button_text = "Watch Channel"
+
+  [[params.social]]
+    name = "GitHub"
+    icon = "💻"
+    url = "https://github.com/B74ME"
+    button_text = "View Code"
+
+  [[params.social]]
+    name = "Email"
+    icon = "📧"
+    url = "mailto:silasunter@gmail.com"
+    button_text = "Contact Me"
+
+  [[params.contact]]
+    icon = "📧"
+    name = "email"
+    value = "info@blamer.ch"
+
+  [[params.contact]]
+    icon = "💼"
+    name = "linkedin"
+    value = "Silas Unternährer"
+
+  [[params.contact]]
+    icon = "💻"
+    name = "github"
+    value = "B74ME"
