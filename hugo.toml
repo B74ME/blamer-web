@@ -18,7 +18,6 @@ theme = "nomad-tech"
     subtitle = "Offensive Security • Vulnerability Research • Security Audits"
     description = "Providing high-impact penetration testing and security assessments to protect your digital assets."
 
-  # Menü Englisch
   [[languages.en.menu.main]]
     name = "Home"
     url = "/"
@@ -51,9 +50,8 @@ theme = "nomad-tech"
 
   [languages.de.params]
     subtitle = "Offensive Sicherheit • Web-Security • Security Audits"
-    description = "Professionelle Identifizierung von Sicherheitslücken und Schutz Ihrer IT-Infrastruktur."
+    description = "Professionelle Identifizierung von Sicherheitslücken und Schutz Ihrer IT-Infrastruktur durch ethisches Hacking."
 
-  # Menü Deutsch
   [[languages.de.menu.main]]
     name = "Home"
     url = "/de/"
@@ -76,7 +74,7 @@ theme = "nomad-tech"
     weight = 5
 
 # -------------------------------------------------------------------
-# GLOBALE PARAMETER
+# GLOBALE PARAMETER (Löst den "can't iterate over nil" Error)
 # -------------------------------------------------------------------
 [params]
   author = "Silas Unternährer"
@@ -93,7 +91,7 @@ theme = "nomad-tech"
   [[params.social]]
     name = "LinkedIn"
     icon = "💼"
-    url = "https://www.linkedin.com/in/silas-unternaehrer" # HIER DEIN PROFIL-LINK
+    url = "https://www.linkedin.com/in/silas-unternaehrer"
     button_text = "Let's Connect"
 
   [[params.social]]
@@ -101,3 +99,14 @@ theme = "nomad-tech"
     icon = "📧"
     url = "mailto:security@blamer.ch"
     button_text = "Hire Me"
+
+  # WICHTIG: Diese Sektion braucht das Theme zwingend
+  [[params.contact]]
+    name = "email"
+    value = "security@blamer.ch"
+    icon = "📧"
+
+  [[params.contact]]
+    name = "linkedin"
+    value = "silas-unternaehrer"
+    icon = "💼"
