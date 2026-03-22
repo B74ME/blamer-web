@@ -72,7 +72,7 @@ theme = "nomad-tech"
 [params]
   author = "Silas Unternährer"
   logo = "BLAMER.CH"
-  favicon = "favicon.png"
+  favicon = "favicon.ico"
 
   [[params.social]]
     name = "YouTube"
