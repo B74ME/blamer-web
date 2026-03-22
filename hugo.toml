@@ -91,7 +91,7 @@ theme = "nomad-tech"
   [[params.social]]
     name = "LinkedIn"
     icon = "💼"
-    url = "https://www.linkedin.com/in/silas-unternaehrer"
+    url = "https://www.linkedin.com/in/blame-%E2%80%8E-037919350/"
     button_text = "Let's Connect"
 
   [[params.social]]
@@ -108,5 +108,5 @@ theme = "nomad-tech"
 
   [[params.contact]]
     name = "linkedin"
-    value = "BLAME"
+    value = "blame-‎-037919350"
     icon = "💼"
