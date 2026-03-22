@@ -3,11 +3,14 @@
         <div class="nav-container">
             <a href="{{ "/" | relLangURL }}" class="logo" aria-label="{{ .Site.Title }} - Home">{{ .Site.Params.logo | default "BLAMER" }}</a>
             <ul class="nav-links" id="nav-menu">
-                <li><a href="{{ "/" | relLangURL }}">{{ i18n "home" }}</a></li>
-                <li><a href="{{ "/posts/" | relLangURL }}">{{ i18n "blog" }}</a></li>
-                <li><a href="{{ "/portfolio/" | relLangURL }}">{{ i18n "portfolio" }}</a></li>
-                <li><a href="{{ "/about/" | relLangURL }}">{{ i18n "about" }}</a></li>
-                </ul>
+                {{ range .Site.Menus.main }}
+                <li>
+                    <a href="{{ .URL | relLangURL }}" class="{{ if $.IsMenuCurrent "main" . }}active{{ end }}">
+                        {{ .Name }}
+                    </a>
+                </li>
+                {{ end }}
+            </ul>
             <div class="lang-switcher" role="group" aria-label="Language selection">
                 {{ range .Site.Languages }}
                 <a href="/{{ .Lang }}/" 
