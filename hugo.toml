@@ -6,65 +6,74 @@ theme = "nomad-tech"
   pagerSize = 6
 
 # -------------------------------------------------------------------
-# ENGLISCH (Main Language - Meistens ohne /en/ in der URL)
+# ENGLISCH (Main Language - International Business)
 # -------------------------------------------------------------------
 [languages.en]
   languageCode = "en-US"
   contentDir = "content/en"
-  title = "Blamer.ch | Offensive Security Specialist"
+  # Titel optimiert für Google: Name + Dienstleistung
+  title = "B74ME | Professional Penetration Testing & Web Security"
   weight = 1
 
   [languages.en.params]
-    subtitle = "Cybersecurity • Ethical Hacking • Arch Linux"
-    description = "Identifying critical vulnerabilities before they are exploited."
+    subtitle = "Offensive Security • Vulnerability Research • Security Audits"
+    # Beschreibung für Firmen (Risikominimierung)
+    description = "Providing high-impact penetration testing and security assessments to protect your digital assets before they are exploited."
 
     [[languages.en.params.portfolio]]
-      title = "TryHackMe Elite"
-      type = "Security Labs"
+      title = "Web Application Security Audits"
+      type = "Professional Services"
       icon = "🛡️"
-      description = "Completed 120+ labs covering Web Exploitation, Privilege Escalation, and AD Hacking."
-      tags = ["Pentesting", "CTF", "Security"]
-      # Hier das /en/ entfernt, da Main Language
-      project_url = "/portfolio/thm-milestone/"
+      description = "In-depth security analysis of web architectures, identifying critical vulnerabilities and providing actionable remediation paths."
+      tags = ["Pentesting", "Web Security", "OWASP"]
+      project_url = "/posts/" # Verlinkt auf deine Writeups als Beweis
 
+  [[languages.en.menu.main]]
+    name = "Services" # NEU: Direktes Angebot für Kunden
+    url = "/services/"
+    weight = 1
+  [[languages.en.menu.main]]
+    name = "Writeups"
+    url = "/posts/"
+    weight = 2
   [[languages.en.menu.main]]
     name = "About"
     url = "/about/"
-    weight = 1
-  [[languages.en.menu.main]]
-    name = "Blog"
-    url = "/posts/"
-    weight = 2
+    weight = 3
 
 # -------------------------------------------------------------------
-# DEUTSCH (Second Language - Immer mit /de/)
+# DEUTSCH (Lokalmarkt Schweiz/DACH)
 # -------------------------------------------------------------------
 [languages.de]
   languageCode = "de-CH"
   contentDir = "content/de"
-  title = "Blamer.ch | IT-Sicherheit Spezialist"
+  title = "B74ME | Penetration Testing & IT-Sicherheitsanalysen"
   weight = 2
 
   [languages.de.params]
-    subtitle = "IT-Sicherheit • Ethisches Hacking • Arch Linux"
-    description = "Identifizierung kritischer Schwachstellen, bevor sie ausgenutzt werden."
+    subtitle = "Offensive Sicherheit • Web-Security • Security Audits"
+    description = "Professionelle Identifizierung von Sicherheitslücken und Schutz Ihrer IT-Infrastruktur durch ethisches Hacking."
 
     [[languages.de.params.portfolio]]
-      title = "TryHackMe: Über 120 Security Labs"
-      type = "Offensive Security"
+      title = "Sicherheitsprüfung für Webanwendungen"
+      type = "Dienstleistung"
       icon = "🛡️"
-      description = "Erfolgreicher Abschluss von über 120 spezialisierten Labs."
-      tags = ["Pentesting", "CTF", "Security"]
-      project_url = "/de/portfolio/thm-milestone/"
+      description = "Detaillierte Analyse von Web-Architekturen zur Vermeidung von Datenlecks und Cyberangriffen."
+      tags = ["Pentesting", "IT-Security", "Compliance"]
+      project_url = "/de/posts/"
 
   [[languages.de.menu.main]]
-    name = "Über mich"
-    url = "/de/about/"
+    name = "Services"
+    url = "/de/services/"
     weight = 1
   [[languages.de.menu.main]]
     name = "Blog"
     url = "/de/posts/"
     weight = 2
+  [[languages.de.menu.main]]
+    name = "Über mich"
+    url = "/de/about/"
+    weight = 3
 
 # -------------------------------------------------------------------
 # GLOBALE PARAMETER
@@ -73,12 +82,8 @@ theme = "nomad-tech"
   author = "Silas Unternährer"
   logo = "BLAMER.CH"
   favicon = "favicon.ico"
-
-  [[params.social]]
-    name = "YouTube"
-    icon = "📺"
-    url = "https://www.youtube.com/@The_BLAME"
-    button_text = "Watch Channel"
+  # Wichtig für Google:
+  keywords = "Pentesting, Web Security, Security Audit, Ethical Hacking, Switzerland, Freelance Security Researcher"
 
   [[params.social]]
     name = "GitHub"
@@ -87,22 +92,23 @@ theme = "nomad-tech"
     button_text = "View Code"
 
   [[params.social]]
-    name = "Email"
+    name = "LinkedIn" # LinkedIn ist wichtiger für Kunden als YouTube!
+    icon = "💼"
+    url = "https://www.linkedin.com/in/DEIN-PROFIL" # HIER LINK ANPASSEN
+    button_text = "Let's Connect"
+
+  [[params.social]]
+    name = "Contact"
     icon = "📧"
     url = "mailto:security@blamer.ch"
-    button_text = "Contact Me"
+    button_text = "Hire Me"
 
   [[params.contact]]
     icon = "📧"
     name = "email"
-    value = "info@blamer.ch"
+    value = "security@blamer.ch"
 
   [[params.contact]]
     icon = "💼"
     name = "linkedin"
-    value = "Silas Unternährer"
-
-  [[params.contact]]
-    icon = "💻"
-    name = "github"
-    value = "B74ME"
+    value = "BLAME"
