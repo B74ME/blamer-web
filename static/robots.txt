@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+Disallow: /themes/
+Disallow: /admin/
+
+Sitemap: https://blamer.ch/sitemap.xml
