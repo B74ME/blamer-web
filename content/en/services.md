@@ -2,6 +2,8 @@
 title: "Professional Security Services"
 description: "High-impact penetration testing and vulnerability assessments to secure your digital infrastructure."
 layout: "page"
+menu: "main"
+weight: 1
 ---
 
 ## Secure Your Business Before the Breach
