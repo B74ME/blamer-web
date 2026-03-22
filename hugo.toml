@@ -88,7 +88,7 @@ theme = "nomad-tech"
   [[params.social]]
     name = "Email"
     icon = "📧"
-    url = "mailto:silasunter@gmail.com"
+    url = "mailto:security@blamer.ch"
     button_text = "Contact Me"
 
   [[params.contact]]
