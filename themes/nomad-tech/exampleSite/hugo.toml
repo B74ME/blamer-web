@@ -1,0 +1,72 @@
+baseURL = "https://blamer.ch/"
+defaultContentLanguage = "en"  # Englisch ist jetzt Standard
+theme = "nomad-tech"
+
+[pagination]
+  pagerSize = 6
+
+[taxonomies]
+  category = "categories"
+  tag = "tags"
+
+[languages]
+  # ENGLISCH ALS HAUPTSPRACHE
+  [languages.en]
+    languageCode = "en-US"
+    contentDir = "content/en"
+    title = "BLAMER // Offensive Intelligence"
+    weight = 1
+
+    [[languages.en.menu.main]]
+      name = "About"
+      url = "/en/about/"
+      weight = 1
+    [[languages.en.menu.main]]
+      name = "Blog"
+      url = "/en/posts/"
+      weight = 2
+
+  # DEUTSCH ALS ZWEITSPRACHE
+  [languages.de]
+    languageCode = "de-CH"
+    contentDir = "content/de"
+    title = "BLAMER // Strategische Sicherheit"
+    weight = 2
+    
+    [[languages.de.menu.main]]
+      name = "Über mich"
+      url = "/de/about/"
+      weight = 1
+    [[languages.de.menu.main]]
+      name = "Blog"
+      url = "/de/posts/"
+      weight = 2
+
+[params]
+  author = "BLAMER"
+  logo = "BLAMER.CH"
+  subtitle = "Strategic Security • Offensive Intelligence • OSCP Candidate"
+  description = "Cybersecurity Specialist based in Switzerland. Top 3% Global Rank on TryHackMe."
+
+  # Social Media
+  [[params.social]]
+    name = "Twitter"
+    class = "twitter"
+    icon = "🐦"
+    url = "https://x.com/m03315_"
+    button_text = "Follow Me"
+
+  # Portfolio
+  [[params.portfolio]]
+    title= "TryHackMe: 120+ Security Labs"
+    type = "Security Labs"
+    icon = "🛡️"
+    description = "Advanced labs covering Web Exploitation, Privilege Escalation, and AD Hacking."
+    tags = ["Pentesting", "CTF", "Security"]
+    project_url = "/en/portfolio/thm-milestone/"
+
+  # Contact
+  [[params.contact]]
+    icon = "📧"
+    name = "Email"
+    value = "silasunter@gmail.com"

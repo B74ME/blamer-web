@@ -1,0 +1,21 @@
+<nav role="navigation" aria-label="Main navigation">
+    <div class="container">
+        <div class="nav-container">
+            <a href="{{ "/" | relLangURL }}" class="logo" aria-label="{{ .Site.Title }} - Home">{{ .Site.Params.logo | default "BLAMER" }}</a>
+            <ul class="nav-links" id="nav-menu">
+                <li><a href="{{ "/" | relLangURL }}">{{ i18n "home" }}</a></li>
+                <li><a href="{{ "/posts/" | relLangURL }}">{{ i18n "blog" }}</a></li>
+                <li><a href="{{ "/portfolio/" | relLangURL }}">{{ i18n "portfolio" }}</a></li>
+                <li><a href="{{ "/about/" | relLangURL }}">{{ i18n "about" }}</a></li>
+                </ul>
+            <div class="lang-switcher" role="group" aria-label="Language selection">
+                {{ range .Site.Languages }}
+                <a href="/{{ .Lang }}/" 
+                   class="lang-link {{ if eq .Lang $.Site.Language.Lang }}active{{ end }}" 
+                   aria-label="Switch to {{ .LanguageName }}">{{ .Lang | upper }}</a>
+                {{ end }}
+            </div>
+            <button class="mobile-menu-btn" aria-expanded="false" aria-controls="nav-menu" aria-label="Toggle navigation menu">☰</button>
+        </div>
+    </div>
+</nav>

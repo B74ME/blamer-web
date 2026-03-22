@@ -1,0 +1,15 @@
+{{ define "main" }}
+<section class="hero">
+    <div class="hero-content">
+        <h1>{{ i18n "hero_greeting" | default "Hallo, ich bin" }} {{ .Site.Params.author | default "Silas" }}</h1>
+        
+        <p>{{ .Language.Params.subtitle | default .Site.Params.subtitle }}</p>
+        <p>{{ .Language.Params.description | default .Site.Params.description }}</p>
+        
+        <div class="cta-buttons">
+            <a href="{{ "/social/" | relLangURL }}" class="btn btn-primary">{{ i18n "follow_social" | default "My Socials" }}</a>
+            <a href="{{ "/about/" | relLangURL }}" class="btn btn-secondary">{{ i18n "learn_more" | default "About Me" }}</a>
+        </div>
+    </div>
+</section>
+{{ end }}
