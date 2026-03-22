@@ -6,43 +6,42 @@ theme = "nomad-tech"
   pagerSize = 6
 
 # -------------------------------------------------------------------
-# ENGLISCH (Main Language - International Business)
+# ENGLISCH (Main Language)
 # -------------------------------------------------------------------
 [languages.en]
   languageCode = "en-US"
   contentDir = "content/en"
-  # Titel optimiert für Google: Name + Dienstleistung
   title = "B74ME | Professional Penetration Testing & Web Security"
   weight = 1
 
   [languages.en.params]
     subtitle = "Offensive Security • Vulnerability Research • Security Audits"
-    # Beschreibung für Firmen (Risikominimierung)
-    description = "Providing high-impact penetration testing and security assessments to protect your digital assets before they are exploited."
+    description = "Providing high-impact penetration testing and security assessments to protect your digital assets."
 
-    [[languages.en.params.portfolio]]
-      title = "Web Application Security Audits"
-      type = "Professional Services"
-      icon = "🛡️"
-      description = "In-depth security analysis of web architectures, identifying critical vulnerabilities and providing actionable remediation paths."
-      tags = ["Pentesting", "Web Security", "OWASP"]
-      project_url = "/posts/" # Verlinkt auf deine Writeups als Beweis
-
+  # Menü Englisch
   [[languages.en.menu.main]]
-    name = "Services" # NEU: Direktes Angebot für Kunden
-    url = "/services/"
+    name = "Home"
+    url = "/"
     weight = 1
+  [[languages.en.menu.main]]
+    name = "Services"
+    url = "/services/"
+    weight = 2
+  [[languages.en.menu.main]]
+    name = "Portfolio"
+    url = "/portfolio/"
+    weight = 3
   [[languages.en.menu.main]]
     name = "Writeups"
     url = "/posts/"
-    weight = 2
+    weight = 4
   [[languages.en.menu.main]]
     name = "About"
     url = "/about/"
-    weight = 3
+    weight = 5
 
 # -------------------------------------------------------------------
-# DEUTSCH (Lokalmarkt Schweiz/DACH)
+# DEUTSCH (Lokalmarkt Schweiz)
 # -------------------------------------------------------------------
 [languages.de]
   languageCode = "de-CH"
@@ -52,28 +51,29 @@ theme = "nomad-tech"
 
   [languages.de.params]
     subtitle = "Offensive Sicherheit • Web-Security • Security Audits"
-    description = "Professionelle Identifizierung von Sicherheitslücken und Schutz Ihrer IT-Infrastruktur durch ethisches Hacking."
+    description = "Professionelle Identifizierung von Sicherheitslücken und Schutz Ihrer IT-Infrastruktur."
 
-    [[languages.de.params.portfolio]]
-      title = "Sicherheitsprüfung für Webanwendungen"
-      type = "Dienstleistung"
-      icon = "🛡️"
-      description = "Detaillierte Analyse von Web-Architekturen zur Vermeidung von Datenlecks und Cyberangriffen."
-      tags = ["Pentesting", "IT-Security", "Compliance"]
-      project_url = "/de/posts/"
-
+  # Menü Deutsch
+  [[languages.de.menu.main]]
+    name = "Home"
+    url = "/de/"
+    weight = 1
   [[languages.de.menu.main]]
     name = "Services"
     url = "/de/services/"
-    weight = 1
+    weight = 2
+  [[languages.de.menu.main]]
+    name = "Portfolio"
+    url = "/de/portfolio/"
+    weight = 3
   [[languages.de.menu.main]]
     name = "Blog"
     url = "/de/posts/"
-    weight = 2
+    weight = 4
   [[languages.de.menu.main]]
     name = "Über mich"
     url = "/de/about/"
-    weight = 3
+    weight = 5
 
 # -------------------------------------------------------------------
 # GLOBALE PARAMETER
@@ -82,8 +82,7 @@ theme = "nomad-tech"
   author = "Silas Unternährer"
   logo = "BLAMER.CH"
   favicon = "favicon.ico"
-  # Wichtig für Google:
-  keywords = "Pentesting, Web Security, Security Audit, Ethical Hacking, Switzerland, Freelance Security Researcher"
+  keywords = "Pentesting, Web Security, Security Audit, Ethical Hacking, Switzerland"
 
   [[params.social]]
     name = "GitHub"
@@ -92,9 +91,9 @@ theme = "nomad-tech"
     button_text = "View Code"
 
   [[params.social]]
-    name = "LinkedIn" # LinkedIn ist wichtiger für Kunden als YouTube!
+    name = "LinkedIn"
     icon = "💼"
-    url = "https://www.linkedin.com/in/DEIN-PROFIL" # HIER LINK ANPASSEN
+    url = "https://www.linkedin.com/in/silas-unternaehrer" # HIER DEIN PROFIL-LINK
     button_text = "Let's Connect"
 
   [[params.social]]
@@ -102,13 +101,3 @@ theme = "nomad-tech"
     icon = "📧"
     url = "mailto:security@blamer.ch"
     button_text = "Hire Me"
-
-  [[params.contact]]
-    icon = "📧"
-    name = "email"
-    value = "security@blamer.ch"
-
-  [[params.contact]]
-    icon = "💼"
-    name = "linkedin"
-    value = "BLAME"
