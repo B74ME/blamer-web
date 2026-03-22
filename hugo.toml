@@ -108,5 +108,5 @@ theme = "nomad-tech"
 
   [[params.contact]]
     name = "linkedin"
-    value = "silas-unternaehrer"
+    value = "BLAME"
     icon = "💼"
